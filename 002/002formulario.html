@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>002</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<form class="row g-3 needs-validation container-fluid" action="002formulario.php" method="post" novalidate>
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <div class="invalid-feedback">
+          Introduce un nombre.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+        <div class="invalid-feedback">
+          Introduce un apellido.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Email</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Introduce un email.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom06" class="form-label">URL Página Personal</label>
+        <input type="text" class="form-control" id="url" name="url" required>
+        <div class="invalid-feedback">
+          Introduce una URL.
+        </div>
+      </div>
+      <div class="form-check col-md-1">
+        <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre">
+        <label class="form-check-label" for="Hombre">
+          Hombre
+        </label>
+      </div>
+      <div class="form-check col-md-1">
+        <input class="form-check-input" type="radio" name="sexo" id="mujer"  value="mujer">
+        <label class="form-check-label" for="Mujer">
+          Mujer
+        </label>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom06" class="form-label">Número de convivientes</label>
+        <input type="number" class="form-control" id="convivientes" name="convivientes" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="videojuegos" id="videojuegos" name="aficiones[]">
+          <label class="form-check-label" for="aficiones">
+            Videojuegos
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="billar" id="billar" name="aficiones[]">
+          <label class="form-check-label" for="aficiones">
+            Billar
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="series" id="series" name="aficiones[]">
+          <label class="form-check-label" for="aficiones">
+            Series
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="festivales" name="aficiones[]">
+          <label class="form-check-label" for="aficiones">
+            Festivales
+          </label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Elige tu saga favorita</label>
+        <select class="form-select form-select-lg" name="menu" id="menu">
+          <option selected value="StarWars">Star Wars</option>
+          <option value="HarryPotter">Harry Potter</option>
+          <option value="ElSeñorDeLosAnillos">El señor de los Anillos</option>
+          <option value="Matrix">Matrix</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary btn-lg" id="submit" type="submit">Enviar</button>
+      </div>
+</form>
+</body>
+</html>
